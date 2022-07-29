@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FrutasContoller;
+use App\Http\Controllers\LoginUsuarioController;
+use App\Http\Controllers\RegistroProductosController;
+use App\Http\Controllers\SucursalesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -33,8 +36,10 @@ Route::get('/contacto/{nombre?}/{edad?}', function($nombre="isaac", $edad=28){
      return view('frutas-listado')
      ->with('frutas', array('Naranja','Pera','Manzana','Frutillas'));
 }); */
-
-
 Route::get('/frutas/listado',[FrutasContoller::class,'index']);
 
+Route::get('/sucursales/tienda',[SucursalesController::class,'sucural']);
 
+Route::get('/login/usuario', [LoginUsuarioController::class,'login']);
+
+Route::get('/registro/productos', [RegistroProductosController::class, 'producto']);

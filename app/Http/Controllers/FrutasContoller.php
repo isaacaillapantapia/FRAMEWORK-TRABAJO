@@ -11,3 +11,4 @@ class FrutasContoller extends Controller
         ->with('frutas', array('Naranja','Pera','Manzana','Frutillas'));
     }
 }
+

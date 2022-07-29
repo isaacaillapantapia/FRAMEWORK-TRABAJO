@@ -6,6 +6,7 @@
     <title>Vista - @yield('title') </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="resources\css\app.css">
   </head>
   <body>
 
@@ -16,13 +17,15 @@
     <div class="nav-wrapper">
       <a href="#" class="brand-logo right">Logo</a>
       <ul id="nav-mobile" class="left hide-on-med-and-down">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">JavaScript</a></li>
+        <li><a href="sass.html">Inicio</a></li>
+        <li><a href="badges.html">Sucursales</a></li>
+        <li><a href="collapsible.html">Productos</a></li>
+        <li><a href="collapsible.html">Login</a></li>
       </ul>
     </div>
   </nav>
 @show
+
 
 <br>
 <!-- Body -->
@@ -38,15 +41,15 @@
             <div class="row">
               <div class="col l6 s12">
                 <h5 class="white-text">Footer Content</h5>
-                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                <p class="grey-text text-lighten-4">Copyright © 2019 Pollos Hermanos -
+                           Términos y Condiciones | Seguridad y Privacidad | Código de ética</p>
               </div>
              
             </div>
           </div>
           <div class="footer-copyright">
             <div class="container">
-            © 2014 Copyright Text
-            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+           
             </div>
           </div>
         </footer>

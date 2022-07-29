@@ -3,7 +3,7 @@
 
 
 @section('header')
-<h2>Listado de Frutas </h2>
+@parent
 @stop
 
 @section('content')

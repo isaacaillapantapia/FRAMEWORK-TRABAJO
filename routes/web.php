@@ -30,6 +30,13 @@ Route::get('/contacto/{nombre?}/{edad?}', function($nombre="isaac", $edad=28){
     'nombre'=> '[A-Za-z]+', //validaciones sencillas
     'edad' => '[0-9]+'   //validaciones sencillas
 ]);
+//rutas match
+
+Route::match(['get','post'],'/hola-mundo', function(){
+    return "hello word";
+
+});
+
 
 
 /* Route::get('/frutas/listado', function(){
@@ -37,9 +44,25 @@ Route::get('/contacto/{nombre?}/{edad?}', function($nombre="isaac", $edad=28){
      ->with('frutas', array('Naranja','Pera','Manzana','Frutillas'));
 }); */
 Route::get('/frutas/listado',[FrutasContoller::class,'index']);
+Route::get('/frutas/agregar',[
+    'uses' => 'App\Http\Controllers\FrutasContoller@agregar',
+    'as' => 'agregarfruta'
+]);
+Route::post('/frutas/guardar',[
+    'uses' => 'App\Http\Controllers\FrutasContoller@guardar',
+    'as' => 'agregarfruta'
+]);
 
-Route::get('/sucursales/tienda',[SucursalesController::class,'sucural']);
 
-Route::get('/login/usuario', [LoginUsuarioController::class,'login']);
 
-Route::get('/registro/productos', [RegistroProductosController::class, 'producto']);
+
+
+
+
+
+
+Route::get('/sucursales/tienda',[SucursalesController::class,'index']);
+
+Route::get('/login/usuario', [LoginUsuarioController::class,'index']);
+
+Route::get('/registro/productos', [RegistroProductosController::class, 'index']);

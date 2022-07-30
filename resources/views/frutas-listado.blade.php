@@ -16,7 +16,7 @@
     <p> {{ $fruta }}</p>
     @endforeach
 </div>
-
+<a href="{{route('agregarfruta') }}" class="btn btn-success">Agregar</a>
 @stop
 
 @section('footer')

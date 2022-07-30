@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class RegistroProductosController extends Controller
 {
-    public function producto(){
+    public function index(){
         return view('stock-registro'); 
         
     }

@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class SucursalesController extends Controller
 {
     
-        public function sucural(){
+        public function index(){
             return view('sucursales-tienda'); 
             
         }
